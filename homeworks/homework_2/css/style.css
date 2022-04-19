@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;900&display=swap');
+
+html {
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: #303030;
+}
+
+h1, h2, h3, p {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1200px;
+    min-height: 72px;
+    margin: 0 auto;
+}
+
+.header__info {    
+    background-color: #272727;
+    padding: 10px 25px;
+    border-radius: 8px;
+}
+
+.header__info > .header__title {
+    color: #ffffff;
+    text-align: center;
+}
+
+.cheese__block {    
+    min-height: 740px;
+    margin-top: 5px;
+    padding-bottom: 10px;
+    border-radius: 8px;
+    background-color: #272727;
+}
+
+.cheese__block > .cheese__title {
+    padding-top: 20px;
+    color: #ffffff;
+    text-align: center;
+}
+
+.cheese__block > .cheese__product {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 10px 20px;
+}
+
+.cheese__block > .cheese__product > .cheese__cart {
+    height: 450px;
+    width: 329px;
+    margin-top: 20px;
+    background-color: #212020;
+    border-radius: 8px;
+    color: #ffffff;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+.cheese__block > .cheese__product > .cheese__cart > .cheese__cart__img img {
+    object-fit: cover;
+    width: 100%;
+    height: 247px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.cheese__block > .cheese__product > .cheese__cart > .cheese__product__title {
+    font-size: 22px;
+    font-weight: 900;
+    margin-top: 15px;
+}
+
+.cheese__block > .cheese__product > .cheese__cart > .cheese__cart__descr {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 20px;
+}
+
+.cheese__block > .cheese__product > .cheese__cart > .cheese__cart__descr > .cheese__product__wight {
+    font-size: 12px;
+    font-weight: 300;
+}
+
+.cheese__block > .cheese__product > .cheese__cart > .cheese__cart__descr > .cheese__product__descr {
+    font-size: 13px;
+    font-weight: 300;
+    margin-top: 5px;
+    line-height: 17px;
+    height: 102px;
+}
+
+.cheese__block > .cheese__product > .cheese__cart > .cheese__product_cart {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px 20px;    
+}
+
+.cheese__block > .cheese__product > .cheese__cart > .cheese__product_cart > .cheese__product_price {
+    font-size: 20px;
+}
+
+.cheese__block > .cheese__product > .cheese__cart > .cheese__product_cart >.cheese__product_btn {
+    width: 120px;
+    height: 35px;
+    border-radius: 8px;
+    border: none;
+    background-color: #01B575;
+    color: #ffffff;
+    font-size: 17px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.cheese__block > .cheese__product > .cheese__cart > .cheese__product_cart >.cheese__product_btn:hover {
+    box-shadow: 5px;
+    background: #01b57692;
+}
+
+.cheese__block > .cheese__product > .cheese__cart > .cheese__product_cart >.cheese__product_btn:active {
+    
+    background: #00724ad2;
+}
