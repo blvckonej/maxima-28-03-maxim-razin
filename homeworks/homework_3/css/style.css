@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;900&display=swap');
 
 html {
-    scroll-behavior: smooth;
     font-family: 'Roboto', sans-serif;
     color: #ffffff;
 }
@@ -73,14 +72,36 @@ h1, h2, h3, p {
 
 .contacts__card > .contacts__block {
     width: 975px;
-    min-height: 800px;
+    height: 800px;
     background-color: #272727;
     border-bottom-right-radius: 8px;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+}
+
+.contacts__card > .contacts__block > .contacts__main {
+    position: relative;
+}
+
+.contacts__card > .contacts__block > .contacts__main > .contacts-img_scroll {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.contacts__card > .contacts__block::-webkit-scrollbar {
+    border-bottom-right-radius: 8px;
+    background-color: #f9f9fd;
+}
+
+.contacts__card > .contacts__block::-webkit-scrollbar-thumb {
+    border-bottom-right-radius: 8px;
+    background-color: #00A97F;
 }
 
 .contacts__card > .contacts__block > .contacts__main > .contacts__atr {
     position: sticky;
-    top: 80px;
+    top: 0;
     margin: 10px 20px;
     padding: 5px 0 5px 20px;
     font-size: 18px;
