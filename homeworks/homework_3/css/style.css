@@ -67,7 +67,6 @@ h1, h2, h3, p, ul, li {
     margin-left: 25px;
     font-size: 18px;
     font-weight: 300;
-
 }
 
 .contacts__card > .contacts__block {
@@ -82,7 +81,6 @@ h1, h2, h3, p, ul, li {
 
 .contacts__card > .contacts__block > .contacts__main {
     position: relative;
-    
 }
 
 .contacts__card > .contacts__block > .contacts__main > .contacts-img_scroll {
