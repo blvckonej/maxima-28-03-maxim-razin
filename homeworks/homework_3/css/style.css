@@ -9,7 +9,7 @@ body {
     background-color: #303030;
 }
 
-h1, h2, h3, p {
+h1, h2, h3, p, ul, li {
     margin: 0;
     padding: 0;
 }
@@ -46,7 +46,7 @@ h1, h2, h3, p {
 
 .contacts__card > .contacts__side > .contacts__link {
     width: 320px;
-    height: 800px;
+    height: 700px;
     background-color: #272727;
     border-bottom-left-radius: 8px;
 }
@@ -72,15 +72,17 @@ h1, h2, h3, p {
 
 .contacts__card > .contacts__block {
     width: 975px;
-    height: 800px;
+    height: 690px;
+    padding-top: 10px;
     background-color: #272727;
     border-bottom-right-radius: 8px;
     overflow-y: scroll;
-    scroll-behavior: smooth;
+    scroll-behavior: smooth;    
 }
 
 .contacts__card > .contacts__block > .contacts__main {
     position: relative;
+    
 }
 
 .contacts__card > .contacts__block > .contacts__main > .contacts-img_scroll {
@@ -99,19 +101,26 @@ h1, h2, h3, p {
     background-color: #00A97F;
 }
 
-.contacts__card > .contacts__block > .contacts__main > .contacts__atr {
+.contacts__card > .contacts__block > .contacts__main > .contacts__label {
     position: sticky;
-    top: 0;
-    margin: 10px 20px;
-    padding: 5px 0 5px 20px;
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
+    top: -10px;
+    bottom: 0;
+    margin: 0 auto;
+    width: 900px;
+    height: 27px;
     font-size: 18px;
     font-weight: 900;
     border-radius: 8px;
     background-color: #00A97F;
+    z-index: 3;
 }
 
 .contacts__card > .contacts__block > .contacts__main > .contacts__list {
-    margin-top: 5px;
+    margin: 0 60px;
+    padding: 10px;
 }
 
 .contacts__card > .contacts__block > .contacts__main > .contacts__list > .contacts__surname {
