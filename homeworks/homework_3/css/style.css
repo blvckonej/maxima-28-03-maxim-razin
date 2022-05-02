@@ -85,6 +85,9 @@ h1, h2, h3, p, ul, li {
 
 .contacts__card > .contacts__block > .contacts__main > .contacts-img_scroll {
     position: absolute;
+    width: 10%;
+    transform: rotate(270deg);
+    margin: 10px;
     bottom: 0;
     right: 0;
 }
