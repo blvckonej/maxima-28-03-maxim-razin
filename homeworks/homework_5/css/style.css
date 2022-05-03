@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;900&display=swap');
+
+
+body {
+    background-color: #1B2473;
+    font-family: 'Roboto', sans-serif;
+    color: #787878;
+}
+
+h1, h2, h3 {
+    margin: 0;
+    padding: 0;
+}
+
+.entrance-cabinet {
+    width: 600px;
+    height: 412px;
+    margin: 0 auto;
+    margin-top: 82px;
+    border-radius: 8px;
+    background-color: #ffffff;
+}
+
+.entrance-cabinet__title {
+    text-align: center;
+    padding-top: 26px;
+    font-size: 50px;
+    font-weight: 700;    
+}
+
+.entrance-cabinet__form {
+    margin-top: 17px;
+}
+
+.entrance-cabinet__name {
+    margin-top: 17px;
+    margin-left: 53px;
+    font-weight: 500;
+    font-size: 16px;    
+}
+
+.entrance-cabinet__field {
+    display: block;
+    width: 509px;
+    height: 49px;
+    border-radius: 10px;
+    margin: 0 auto;
+    margin-top: 3px;
+    font-size: 28px;
+    font-weight: 700;
+    color: #787878;
+    border: 2px solid black;    
+}
+
+.entrance-cabinet__field::placeholder {
+    color: #cccccc;
+    opacity: 0.7;  
+    padding-left: 15px;
+}
+
+.entrance-cabinet__updates {
+    display: flex;
+    align-items: center;
+    margin-top: 16px;
+}
+
+.entrance-cabinet__box {
+    margin-left: 45px;
+}
+
+.entrance-cabinet__descr {
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.entrance-cabinet__button {
+    display: block;
+    margin: 0 auto;
+    margin-top: 52px;
+    width: 180px;
+    height: 52px;
+    border-radius: 10px;
+    border: none;
+    background-color: #1a226B;
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: 700;
+}
