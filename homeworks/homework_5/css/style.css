@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;900&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
 
 body {
     background-color: #1B2473;
@@ -17,29 +16,33 @@ h1, h2, h3 {
     height: 412px;
     margin: 0 auto;
     margin-top: 82px;
-    border-radius: 8px;
+    border-radius: 20px;
     background-color: #ffffff;
+    padding-top: 1px;
 }
 
 .entrance-cabinet__title {
-    text-align: center;
-    padding-top: 26px;
+    width: 115px;
+    height: 55px;
+    margin: 0 auto;
+    margin-top: 25px;
     font-size: 50px;
     font-weight: 700;    
 }
 
 .entrance-cabinet__form {
-    margin-top: 17px;
+    margin: 0px 46px 26px 45px;
 }
 
 .entrance-cabinet__name {
-    margin-top: 17px;
-    margin-left: 53px;
-    font-weight: 500;
+    margin-top: 12px;
+    margin-left: 8px;
+    font-weight: 700;
     font-size: 16px;    
 }
 
 .entrance-cabinet__field {
+    padding: 0;
     display: block;
     width: 509px;
     height: 49px;
@@ -49,7 +52,7 @@ h1, h2, h3 {
     font-size: 28px;
     font-weight: 700;
     color: #787878;
-    border: 2px solid black;    
+    border: 1px solid black;    
 }
 
 .entrance-cabinet__field::placeholder {
@@ -64,10 +67,6 @@ h1, h2, h3 {
     margin-top: 16px;
 }
 
-.entrance-cabinet__box {
-    margin-left: 45px;
-}
-
 .entrance-cabinet__descr {
     font-weight: 400;
     font-size: 14px;
@@ -76,7 +75,7 @@ h1, h2, h3 {
 .entrance-cabinet__button {
     display: block;
     margin: 0 auto;
-    margin-top: 52px;
+    margin-top: 50px;
     width: 180px;
     height: 52px;
     border-radius: 10px;

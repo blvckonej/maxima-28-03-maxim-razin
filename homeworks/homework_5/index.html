@@ -1,34 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
     <title>Личный кабинет</title>
-</head>
-<body>
+  </head>
+  <body>
     <main>
-        <div class="entrance">
-            <div class="entrance-cabinet">
-                <h1 class="entrance-cabinet__title">Вход</h1>
-                <form action="#" class="entrance-cabinet__form">
-                    <div class="entrance-cabinet__name">
-                        Email
-                    </div>
-                    <input required id="email" type="text" placeholder="Введите Email" class="entrance-cabinet__field">
-                    <div class="entrance-cabinet__name">
-                        Пароль
-                    </div>
-                    <input required id="password" type="password" placeholder="Введите пароль" class="entrance-cabinet__field">
-                    <div class="entrance-cabinet__updates">
-                        <input id="checkbox" type="checkbox" class="entrance-cabinet__box">
-                        <label for="checkbox" class="entrance-cabinet__descr">Я согласен получать обновления на почту</label>
-                    </div>
-                    <input type="submit" value="Войти" class="entrance-cabinet__button">
-                </form>
+      <div class="entrance">
+        <div class="entrance-cabinet">
+          <h1 class="entrance-cabinet__title">Вход</h1>
+          <form action="#" class="entrance-cabinet__form">
+            <div class="entrance-cabinet__name">Email</div>
+            <input class="entrance-cabinet__field" required id="email" type="text" placeholder="Введите Email">
+            <div class="entrance-cabinet__name">Пароль</div>
+            <input class="entrance-cabinet__field" required id="password" type="password" placeholder="Введите пароль">
+            <div class="entrance-cabinet__updates">
+              <input class="entrance-cabinet__box" id="checkbox" type="checkbox">
+              <label class="entrance-cabinet__descr" for="checkbox">Я согласен получать обновления на почту</label>
             </div>
+            <input class="entrance-cabinet__button" type="submit" value="Войти">
+          </form>
         </div>
+      </div>
     </main>
-</body>
+  </body>
 </html>
