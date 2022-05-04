@@ -1,4 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
+
+* {
+    box-sizing: border-box;
+}
 
 body {
     background-color: #1B2473;
@@ -25,7 +29,7 @@ h1, h2, h3 {
     width: 115px;
     height: 55px;
     margin: 0 auto;
-    margin-top: 25px;
+    margin-top: 20px;
     font-size: 50px;
     font-weight: 700;    
 }
@@ -35,10 +39,14 @@ h1, h2, h3 {
 }
 
 .entrance-cabinet__name {
-    margin-top: 12px;
+    margin-top: 13px;
     margin-left: 8px;
     font-weight: 700;
     font-size: 16px;    
+}
+
+.entrance-cabinet__name:nth-child(3) {
+    margin-top: 11px;
 }
 
 .entrance-cabinet__field {
@@ -51,31 +59,41 @@ h1, h2, h3 {
     margin-top: 3px;
     font-size: 28px;
     font-weight: 700;
+    line-height: 36px;
     color: #787878;
-    border: 1px solid black;    
+    border: 2px solid black;
+    padding-left: 15px;    
 }
 
 .entrance-cabinet__field::placeholder {
     color: #cccccc;
-    opacity: 0.7;  
-    padding-left: 15px;
+    opacity: 0.7;
 }
 
 .entrance-cabinet__updates {
     display: flex;
     align-items: center;
+    width: 312px;
+    height: 24px;
     margin-top: 16px;
 }
 
+.entrance-cabinet__box {
+    width: 17px;
+    height: 17px;
+}
+
 .entrance-cabinet__descr {
+    margin-left: 10px;
     font-weight: 400;
     font-size: 14px;
+    line-height: 16px;
 }
 
 .entrance-cabinet__button {
     display: block;
     margin: 0 auto;
-    margin-top: 50px;
+    margin-top: 52px;
     width: 180px;
     height: 52px;
     border-radius: 10px;
@@ -84,4 +102,26 @@ h1, h2, h3 {
     color: #ffffff;
     font-size: 24px;
     font-weight: 700;
+    line-height: 16px;
+}
+
+@media (max-height: 768px) and (max-width: 320px) {
+   
+    .entrance-cabinet {
+        margin: 0 auto;
+        width: 100%;
+        position: relative;
+    }
+
+    .entrance-cabinet__field {
+        width: 100%;
+    }
+
+    .entrance-cabinet__updates {
+        width: 100%;
+    }
+
+    .entrance-cabinet__box {
+        width: 30px;
+    }
 }
