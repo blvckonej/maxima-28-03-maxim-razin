@@ -1,0 +1,63 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  overflow: hidden;
+  overflow-y: visible;
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.header {
+  background-color: #EDD603;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
+}
+
+.header-block {
+  height: 98px;
+  display: flex;
+  align-items: center;
+}
+.header-block__label {
+  margin-left: 30px;
+}
+.header-block__title {
+  font-size: 48px;
+  font-weight: 400;
+  color: #652D90;
+}
+
+.products-block {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 0 auto;
+  margin-top: 31px;
+}
+.products-block__card {
+  width: 300px;
+  height: 405px;
+  margin-top: 40px;
+  margin-left: 60px;
+  border-radius: 20px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+.products-block__card:first-of-type {
+  margin-left: 30px;
+}
+.products-block__card:nth-child(5) {
+  margin-left: 30px;
+}
+.products-block__img {
+  width: 300px;
+  height: 315px;
+}
+.products-block__img img {
+  width: 100%;
+  height: auto;
+}
