@@ -16,13 +16,15 @@ h1, h2, h3 {
 }
 
 .entrance-cabinet {
-    width: 600px;
+    max-width: 600px;
     height: 412px;
     margin: 0 auto;
     margin-top: 82px;
     border-radius: 20px;
     background-color: #ffffff;
     padding-top: 1px;
+    overflow: hidden;
+    padding: 0 10px;
 }
 
 .entrance-cabinet__title {
@@ -39,6 +41,7 @@ h1, h2, h3 {
 }
 
 .entrance-cabinet__name {
+    max-width: 509px;
     margin-top: 13px;
     margin-left: 8px;
     font-weight: 700;
@@ -50,19 +53,18 @@ h1, h2, h3 {
 }
 
 .entrance-cabinet__field {
-    padding: 0;
     display: block;
-    width: 509px;
+    margin: 0 auto;
+    width: 100%;
     height: 49px;
     border-radius: 10px;
-    margin: 0 auto;
     margin-top: 3px;
     font-size: 28px;
     font-weight: 700;
     line-height: 36px;
     color: #787878;
     border: 2px solid black;
-    padding-left: 15px;    
+    padding-left: 15px;
 }
 
 .entrance-cabinet__field::placeholder {
@@ -73,7 +75,7 @@ h1, h2, h3 {
 .entrance-cabinet__updates {
     display: flex;
     align-items: center;
-    width: 312px;
+    max-width: 312px;
     height: 24px;
     margin-top: 16px;
 }
@@ -105,23 +107,22 @@ h1, h2, h3 {
     line-height: 16px;
 }
 
-@media (max-height: 768px) and (max-width: 320px) {
+@media (max-width: 768px) {
+    .entrance {
+        width: 100%;
+        height: 100%;
+    }
    
     .entrance-cabinet {
         margin: 0 auto;
-        width: 100%;
-        position: relative;
+        max-width: 100%;
+        height: 98vh;
+        padding: 10px;
     }
+}
 
+@media (max-width: 390px) {    
     .entrance-cabinet__field {
-        width: 100%;
-    }
-
-    .entrance-cabinet__updates {
-        width: 100%;
-    }
-
-    .entrance-cabinet__box {
-        width: 30px;
+        font-size: 20px;
     }
 }
