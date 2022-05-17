@@ -75,14 +75,42 @@ h1, h2, h3 {
 .entrance-cabinet__updates {
     display: flex;
     align-items: center;
-    max-width: 312px;
+    max-width: 350px;
     height: 24px;
     margin-top: 16px;
 }
 
-.entrance-cabinet__box {
-    width: 17px;
-    height: 17px;
+.entrance-cabinet__box-wrapp {
+    display: block;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.entrance-cabinet__box-wrapp > input {
+    position: absolute;
+    transform: scale(0);
+}
+
+.entrance-cabinet__box-wrapp > input:checked ~ .entrance-cabinet__box-checkbox {
+    transform: rotate(45deg);
+    width: 10px;
+    margin-left: 16px;
+    border-color: #24c78e;
+    border-top-color: transparent;
+    border-left-color: transparent;
+    border-radius: 0;
+}
+
+.entrance-cabinet__box-checkbox {
+    display: block;
+    width: inherit;    
+    height: inherit;
+    border: 1px solid #434343;
+    border-radius: 6px;
+    transition: all 0.375s;
+    z-index: 100;    
 }
 
 .entrance-cabinet__descr {
