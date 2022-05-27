@@ -14,7 +14,7 @@ button.addEventListener('click', () => {
     if (signs === '+') {
         const result1 = Number(value1) + Number(value2);
         result.textContent = result1;
-    } else if (signs === '') {
+    } else if (signs !== '/' && signs !== '*' && signs !== '-' && signs !== '+') {
         alert("Введите знак");
     } else if (value1 === '') {
         alert("Введите первое число");

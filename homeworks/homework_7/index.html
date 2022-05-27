@@ -1,17 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
     <title>Document</title>
-</head>
-<body>
-    <input id="value1">
-    <input id="signs">
-    <input id="value2">
-    <button>Посчитать</button>
-    <div id="result"></div>
+  </head>
+  <body>
+    <div class="input-block">
+      <input id="value1" type="number" class="value-input">
+      <input id="signs" pattern="[-+*/]{1}" class="value-input">
+      <input id="value2" type="number" class="value-input">
+      <button class="value-btn">Посчитать</button>
+    </div>
+    <div id="result" class="result-block"></div>
     <script src="./script.js"></script>
-</body>
+  </body>
 </html>
