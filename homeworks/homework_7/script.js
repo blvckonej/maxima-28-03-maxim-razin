@@ -25,9 +25,9 @@ button.addEventListener('click', () => {
         result.textContent = result1;
     } else if (signs !== '/' && signs !== '*' && signs !== '-' && signs !== '+') {
         alert("Введите знак");
-    } else if (value1 === '') {
+    } if (value1 === '') {
         alert("Введите первое число");
-    } else if (value2 === '') {
+    } if (value2 === '') {
         alert("Введите второе число");
     }
 })
