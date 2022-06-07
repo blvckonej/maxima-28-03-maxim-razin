@@ -7,14 +7,19 @@
     <link rel="stylesheet" href="./style.css">
     <title>Document</title>
   </head>
-  <body>
-    <div class="input-block">
-      <input id="value1" type="number" class="value-input">
-      <input id="signs" pattern="[-+*/]{1}" class="value-input">
-      <input id="value2" type="number" class="value-input">
-      <button class="value-btn">Посчитать</button>
+  <body>    
+    <div class="title">
+    <h1>Калькулятор</h1>
     </div>
-    <div id="result" class="result-block"></div>
+    <div class="input-block">
+      
+      <input id="value1" type="number" class="value-input" placeholder="Введите первое число">
+      <input id="signs" class="value-input" placeholder="Введите знак">
+      <input id="value2" type="number" class="value-input" placeholder="Введите второе число">
+      <button class="value-btn">Посчитать</button>
+      <div id="result" class="result-block"></div>
+    </div>
+    
     <script src="./script.js"></script>
   </body>
 </html>

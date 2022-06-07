@@ -23,11 +23,15 @@ button.addEventListener('click', () => {
     } else if (signs === '/') {
         const result1 = Number(value1) / Number(value2);
         result.textContent = result1;
-    } else if (signs !== '/' && signs !== '*' && signs !== '-' && signs !== '+') {
-        alert("Введите знак");
+    } else if (signs !== '/' || signs !== '*' || signs !== '-' || signs !== '+') {
+        result.textContent = 'Программа не поддерживает такую операцию'
     } if (value1 === '') {
-        alert("Введите первое число");
+        result.textContent = 'Введите первое число'
     } if (value2 === '') {
-        alert("Введите второе число");
+        result.textContent = 'Введите второе число'
+    } if (signs === '') {
+        result.textContent = 'Не введен знак'
+    } else if(signs === '/' && value2 === '0' || value2 === '-0') {
+        result.textContent = 'Нельзя делить на ноль, чувачок'        
     }
 })
