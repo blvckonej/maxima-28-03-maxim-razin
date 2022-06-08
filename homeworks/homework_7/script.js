@@ -6,6 +6,11 @@ const signInput = document.getElementById('signs');
 const button = document.querySelector('button');
 const result = document.getElementById('result');
 
+const changeHandler = e => {
+    const value = e.value;
+    e.value = value.replace(/\D/g, '')
+}
+
 button.addEventListener('click', () => {
     const value1 = input1.value;
     const value2 = input2.value;

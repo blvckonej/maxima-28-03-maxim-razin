@@ -12,14 +12,12 @@
     <h1>Калькулятор</h1>
     </div>
     <div class="input-block">
-      
-      <input id="value1" type="number" class="value-input" placeholder="Введите первое число">
+      <input id="value1" class="value-input" placeholder="Введите первое число" oninput="changeHandler(this)">
       <input id="signs" class="value-input" placeholder="Введите знак">
-      <input id="value2" type="number" class="value-input" placeholder="Введите второе число">
+      <input id="value2" class="value-input" placeholder="Введите второе число" oninput="changeHandler(this)">
       <button class="value-btn">Посчитать</button>
       <div id="result" class="result-block"></div>
     </div>
-    
     <script src="./script.js"></script>
   </body>
 </html>
